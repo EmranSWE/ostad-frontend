@@ -1,11 +1,15 @@
 import logo from './logo.svg';
 import './App.css';
+import Navbar from './components/Shared/Navbar';
+import Footer from './components/Shared/Footer';
+import HomePage from './components/Home/HomePage';
 
 function App() {
   return (
     <div>
-     <h1 className='text-5xl'>Hello</h1>
-     <button class="btn w-64 rounded-full">Button</button>
+     <Navbar></Navbar>
+     <HomePage></HomePage>
+     <Footer></Footer>
     </div>
   );
 }
