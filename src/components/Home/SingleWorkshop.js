@@ -2,8 +2,8 @@ import React from 'react';
 import team from '../../Assets/team-line.png';
 import dayImg from '../../Assets/clock.png';
 import arrow from '../../Assets/Group.png';
-const SingleLiveCourse = ({course}) => {
-    const {image, batchNo, seatAvail,day,courseTitle} = course;
+const SingleWorkshop = ({workshop}) => {
+    const {image, batchNo, seatAvail,day,courseTitle} = workshop;
     return (
         <div className='hero'>
             <div className="card card-compact w-96  shadow-xl">
@@ -28,4 +28,4 @@ const SingleLiveCourse = ({course}) => {
     );
 };
 
-export default SingleLiveCourse;
+export default SingleWorkshop;

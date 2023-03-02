@@ -6,7 +6,7 @@ import arrow from '../../Assets/Group.png';
 const Banner = () => {
     return (
         <div>
-            <div className="hero min-h-screen ">
+            <div className="hero min-h-screen">
                 <div className="hero-content flex-col lg:flex-row">
                     <img src={banner} className="max-w-sm rounded-lg shadow-2xl" alt='banner' />
                     <div>
