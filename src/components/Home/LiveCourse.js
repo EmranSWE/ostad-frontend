@@ -16,16 +16,24 @@ const LiveCourse = () => {
 
     return (
         <div>
-            <div className=' p-9'><div className='flex items-center '><img src={progress} alt="" /><h1 className='text-2xl mx-5 font-bold'> Ostad helps you in your career with</h1></div>
-            <p>স্কিল ডেভেলপ করুন দেশের সেরা ইন্সট্রাক্টরদের সাথে, ক্লিক করুন নিচের বাটনে।</p></div>
+            <div className='p-5 m-10'>
+                <div className='flex items-center '>
+                    <img src={progress} alt="" />
+                    <h1 className='text-2xl mx-5 font-bold'> Ostad helps you in your career with
+                    </h1>
+                </div>
+            <p className='mt-3'>স্কিল ডেভেলপ করুন দেশের সেরা ইন্সট্রাক্টরদের সাথে, ক্লিক করুন নিচের বাটনে।</p>
+            </div>
 
 
-            <div className='flex p-9 items-center'><img className='mx-4' src={live} alt="live" /> <h1 className='text-3xl'>লাইভ কোর্সসমূহ</h1></div>
+          <div className='bg-base-200 lg:m-10 shadow-xl'>
+          <div className='flex p-10 items-center '><img className='mx-4' src={live} alt="live" /> <h1 className='text-3xl'>লাইভ কোর্সসমূহ</h1></div>
            <div className='grid lg:grid-cols-3 sm:grid-cols-1 gap-4'>
            {
                 liveCourse.map((liveCourse,index)=> <SingleLiveCourse key={index} course={liveCourse}></SingleLiveCourse>)
             }
            </div>
+          </div>
         </div>
     );
 };

@@ -10,12 +10,15 @@ const Workshop = () => {
         ]
     return (
         <div>
-        <div className='flex p-9 items-center'><img className='mx-4' src={workshopPic} alt="live" /> <h1 className='text-3xl'>ওয়ার্কশপ</h1></div>
-       <div className='grid lg:grid-cols-3 sm:grid-cols-1 gap-4'>
+            <div className='bg-base-200 p-5 lg:m-10 shadow-xl'>
+            <div className='flex p-5 items-center'><img className='mx-4' src={workshopPic} alt="live" /> <h1 className='text-3xl'>ওয়ার্কশপ</h1></div>
+       <div className='grid lg:grid-cols-3 sm:grid-cols-1 gap-4 '>
        {
             workshop.map((workshop,index)=> <SingleWorkshop key={index} workshop={workshop}></SingleWorkshop>)
         }
        </div>
+            </div>
+       
     </div>
     );
 };

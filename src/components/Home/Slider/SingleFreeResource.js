@@ -12,11 +12,11 @@ const {title,image}=item;
             <p>Language Learning</p>
             <h2 className="card-title">{title}</h2>
             <div className="card-actions justify-between">
-            <div className='flex'>
-            <img className='w-3 mx-2' src={clock} alt="" /><h1> 60min</h1>
+            <div className='flex items-center'>
+            <img className='w-5 h-5 mx-1' src={clock} alt="" /><h1> 60min</h1>
             </div>
-            <div className='flex'>
-            <img src={calender} alt="" /> <h1> 30 March,2022</h1>
+            <div className='flex items-center'>
+            <img className='w-5 h-5 mx-1'  src={calender} alt="" /> <h1> 30 March,2022</h1>
             </div>
             </div>
             

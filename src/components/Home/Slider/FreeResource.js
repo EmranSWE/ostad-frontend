@@ -22,16 +22,14 @@ const FreeResource = () => {
         { width: 1200, itemsToShow: 4 }
     ];
 
-
-
     return (
         <div>
-            <div>
-                <div className='flex items-center'>
+            <div className='lg:p-5'>
+                <div className='flex items-center mx-12 '>
                     <img src={play} alt="" />
-                    <h1 className='text-5x font-bold'>ফ্রি ভিডিও রিসোর্স</h1>
+                    <h1 className='text-2xl font-bold'>ফ্রি ভিডিও রিসোর্স</h1>
                 </div>
-                <p>স্কিল ডেভেলপ করুন দেশের সেরা ইন্সট্রাক্টরদের সাথে, ক্লিক করুন নিচের বাটনে।</p>
+                <p className='mx-12 '> স্কিল ডেভেলপ করুন দেশের সেরা ইন্সট্রাক্টরদের সাথে, ক্লিক করুন নিচের বাটনে।</p>
             </div>
             <div>
                 <Carousel breakPoints={breakPoints}>

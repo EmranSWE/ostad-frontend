@@ -23,12 +23,12 @@ const IndustiesExpert = () => {
 
     return (
         <div>
-            <div>
+            <div className='lg:mx-12 mt-20'>
                 <div className='flex items-center'>
-                    <img src={careerExpert} alt="" />
-                    <h1 className='text-5x font-bold'>ক্যারিয়ার গড়তে ইন্ডাস্ট্রি এক্সপার্টগন</h1>
+                    <img className='mx-4' src={careerExpert} alt="" />
+                    <h1 className='text-3xl font-bold'>ক্যারিয়ার গড়তে ইন্ডাস্ট্রি এক্সপার্টগন</h1>
                 </div>
-                <p>স্কিল ডেভেলপ করুন দেশের সেরা ইন্সট্রাক্টরদের সাথে, ক্লিক করুন নিচের বাটনে।</p>
+                <p className='mx-5 mt-4'>স্কিল ডেভেলপ করুন দেশের সেরা ইন্সট্রাক্টরদের সাথে, ক্লিক করুন নিচের বাটনে।</p>
             </div>
             <div>
                 <Carousel breakPoints={breakPoints}>

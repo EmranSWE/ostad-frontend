@@ -1,11 +1,12 @@
 import React from 'react';
 import logo from '../../Assets/logo ostad.png';
+import language from '../../Assets/english.png';
 const Navbar = () => {
     return (
-        <div className=''>
+        <div className='lg:mx-10'>
             <div class="navbar bg-base-100">
-                <div class="navbar-start">
-                    <div class="dropdown">
+                <div class="navbar lg:flex-row-reverse">
+                    <div class="navbar  dropdown">
                         <label tabindex="0" class="btn btn-ghost lg:hidden">
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
                         </label>
@@ -25,6 +26,7 @@ const Navbar = () => {
                         </ul>
                     </div>
                     <a class="btn btn-ghost normal-case text-xl lg:mx-10"><img src={logo} alt="" /></a>
+                    
                 </div>
 
                 <div class="navbar-end">
@@ -41,10 +43,10 @@ const Navbar = () => {
                                 </ul>
                             </li>
                             <li><a>আপকামিং লাইভ ব্যাচ</a></li>
-                            <li><a>English</a></li>
+                            <li><a> <img src={language} alt="" />English</a></li>
                         </ul>
                     </div>
-                    <a class="btn btn btn-outline btn-secondary lg:mx-10">Login</a>
+                    <a className="btn btn-outline border-amber-400 bg-amber-50 lg:mx-10 ">Login</a>
                 </div>
             </div>
         </div>

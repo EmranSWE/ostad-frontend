@@ -7,14 +7,13 @@ const TrustOstad = () => {
     return (
         <div style={{backgroundColor:'rgba(16, 24, 40, 1)'}} >
             <h1 className='text-2xl p-5 text-center text-white font-bold'>Top companies trust Ostad</h1>
-            <div className='grid lg:grid-cols-7 sm:grid-cols-3 p-4'>
+            <div className='grid lg:grid-cols-7 sm:grid-cols-1 sm:ml-10 p-4'>
                 <div><img src={amarTk} alt="" /></div>
                 <div><img src={misfit} alt="" /></div>
                 <div><img src={walton} alt="" /></div>
                 <div><img src={romoni} alt="" /></div>
                 <div><img src={walton} alt="" /></div>
                 <div><img src={romoni} alt="" /></div>
-
                 <div><img src={amarTk} alt="" /></div>
             </div>
         </div>

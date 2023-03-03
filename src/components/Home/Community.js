@@ -15,9 +15,11 @@ const Community = () => {
         ]
     return (
         <div>
-        <div className='flex p-9 items-center'><img className='mx-4' src={communityPic} alt="live" /> <h1 className='text-3xl'>জয়েন করুন আমাদের কমিউনিটিতে</h1></div>
-        <p className='mx-12'>স্কিল ডেভেলপ করুন দেশের সেরা ইন্সট্রাক্টরদের সাথে, ক্লিক করুন নিচের বাটনে।</p>
-       <div className='grid lg:grid-cols-2 sm:grid-cols-1 gap-4'>
+       <div className='lg:p-10 lg:mx-10'>
+       <div className='flex items-center'><img className='mx-4' src={communityPic} alt="live" /> <h1 className='text-2xl font-bold'>জয়েন করুন আমাদের কমিউনিটিতে</h1></div>
+        <p className='lg:mt-2'>স্কিল ডেভেলপ করুন দেশের সেরা ইন্সট্রাক্টরদের সাথে, ক্লিক করুন নিচের বাটনে।</p>
+       </div>
+       <div className='grid lg:grid-cols-2 sm:grid-cols-1 mx-12 gap-4'>
        {
             community.map((community,index)=> <SingleCommunity key={index} community={community}></SingleCommunity>)
         }

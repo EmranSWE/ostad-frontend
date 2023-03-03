@@ -28,9 +28,10 @@ const SliderSection = () => {
         }
     };
     return (
-        <div className='p-5 bg-blue-900'>
-            <div className='flex'><img src={book} alt="" /><h1 className='text-3xl text-white'>এক্সপার্টদের ক্যারিয়ার গাইডলাইন</h1></div>
-            <Carousel responsive={responsive}>
+        <div style={{backgroundColor:'rgba(16, 24, 40, 1)'}} >
+            <div className='mx-12'>
+            <div className='flex items-center py-4'><img src={book} alt="" /><h1 className='text-2xl text-white'>এক্সপার্টদের ক্যারিয়ার গাইডলাইন</h1></div>
+            <Carousel responsive={responsive} className='py-10'>
                 <div>
                     <div className="card card-compact w-96 bg-base-100 shadow-xl">
                         <figure><img className='w-96' src={careerGuidImg} alt="Shoes" /></figure>
@@ -117,8 +118,10 @@ const SliderSection = () => {
                                 </div>
                             </div>
                         </div>
-                    </div></div>
+                    </div>
+                    </div>
             </Carousel>
+            </div>
         </div>
 
     );
