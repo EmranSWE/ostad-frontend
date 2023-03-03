@@ -1,28 +1,29 @@
 import React from 'react';
 import freeCourse from '../../../Assets/freeCourse.png';
-const SingleFreeResource = ({item}) => {
-    const {image,date,time,courseTitle}=item;
-    return (
-        <div>
-            <div className='hero'>
-            <div className="card card-compact w-96  shadow-xl">
-               
-                <figure><img className='w-96' src={freeCourse} alt="Shoes" /></figure>
-                <div>
-                    {date}
-                    {time}
-                </div>
-                <div className="card-body">
-                    <h2 className="card-title">{courseTitle}</h2>
-                    <div className="card-actions justify-between">
-
-                       <p>IELTS Reading</p>
-                    </div>
-                </div>
+import clock from '../../../Assets/clock.png';
+import calender from '../../../Assets/calender.png';
+const SingleFreeResource = ({ item }) => {
+const {title,image}=item;
+  return (
+      <div className='m-5'>
+        <div className="card shadow">
+          <figure><img className='w-96 ' src={image} alt="Shoes" /></figure>
+          <div className="card-body">
+            <p>Language Learning</p>
+            <h2 className="card-title">{title}</h2>
+            <div className="card-actions justify-between">
+            <div className='flex'>
+            <img className='w-3 mx-2' src={clock} alt="" /><h1> 60min</h1>
             </div>
-        </div> 
+            <div className='flex'>
+            <img src={calender} alt="" /> <h1> 30 March,2022</h1>
+            </div>
+            </div>
+            
+          </div>
         </div>
-    );
+    </div>
+  );
 };
 
 export default SingleFreeResource;

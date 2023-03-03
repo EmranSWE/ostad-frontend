@@ -7,6 +7,7 @@ import Workshop from './Workshop';
 import SliderSection from '../Home/Slider/SliderSection';
 import TrustOstad from './TrustOstad';
 import FreeResource from './Slider/FreeResource';
+import IndustiesExpert from './Slider/IndustiesExpert';
 const HomePage = () => {
     return (
         <div>
@@ -16,6 +17,7 @@ const HomePage = () => {
             <Workshop></Workshop>
             <FreeResource></FreeResource>
             <Community></Community>
+            <IndustiesExpert></IndustiesExpert>
             <TrustOstad></TrustOstad>
             <CareerGuidelines></CareerGuidelines>
 
